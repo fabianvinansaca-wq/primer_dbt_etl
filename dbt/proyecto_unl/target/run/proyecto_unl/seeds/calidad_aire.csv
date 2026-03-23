@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "db_warehouse"."public"."calidad_aire" ("ciudad_id" text,"indice_ica" integer,"particulas_pm25" float8)
+  ;
+    -- dbt seed --
+    
+          insert into "db_warehouse"."public"."calidad_aire" ("ciudad_id", "indice_ica", "particulas_pm25") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      
+
+;
+  

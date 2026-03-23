@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "db_warehouse"."public"."datos_clima";
+    -- dbt seed --
+    
+          insert into "db_warehouse"."public"."datos_clima" ("ciudad", "temperatura", "clima") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      
+
+;
+  
